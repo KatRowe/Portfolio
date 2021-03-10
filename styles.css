@@ -1,11 +1,46 @@
 body {
-  background-color: #222;
 }
 
-header {
+h1 {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+p {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+header section {
+  text-align: center;
+  margin-top: -180px;
+  background-color: #222;
   color: white;
 }
 
-header h1 {
-  font-family: "Akaya Telivigala", cursive;
+img {
+  margin: 0;
+  display: block;
+}
+
+.skewed {
+  background-color: #222;
+  height: 500px;
+  /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+}
+
+/* desktop/laptop styles */
+
+@media screen and (min-device-width: 1200px) {
+  header section {
+    margin-top: -300px;
+  }
+
+  .skewed {
+    height: 700px;
+    font-size: 40px;
+  }
+
+  section p {
+    font-size: 30px;
+  }
 }
